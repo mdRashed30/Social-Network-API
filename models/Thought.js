@@ -1,5 +1,6 @@
 const { Schema, model, Types } = require('mongoose');
-// import moment module to format the timestamp 
+
+
 const moment = require('moment')
 
 //reaction schema
@@ -69,7 +70,8 @@ thoughtSchema.virtual('reactionCount')
         return this.reactions.length;
     })
 
-// create the User model using the UserSchema
+
 const Thought = model('Thought', thoughtSchema);
 // export the Thought model
+
 module.exports = Thought;
