@@ -2,15 +2,15 @@
   "dependencies": {
     "express": "^4.18.2",
     "moment": "^2.29.4",
-    "mongoose": "^7.4.0"
+    "mongoose": "^7.4.1"
   },
   "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
   "name": "social-newtwork-api",
   "version": "1.0.0",
   "main": "server.js",
-  "devDependencies": {},
   "keywords": [],
   "author": "",
   "license": "ISC",

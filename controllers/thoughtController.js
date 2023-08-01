@@ -3,9 +3,10 @@ const { User, Thought } = require("../models");
 module.exports = {
     getThoughts(req, res) {
         Thought.find({})
-            .then((Thought) => res.json(thought))
-            .catch((err) => res.status(500).json(err))
+            .then((thoughts) => res.json(thoughts))
+            .catch((err) => res.status(500).json(err));
     },
+
     getSingleThought(req, res) {
         Thought.findOne({ _id: req.params.thoughtId })
             .select("-__v")
@@ -16,7 +17,7 @@ module.exports = {
             )
             .catch((err) => res.status(500).json(err));
     },
-    // create a new post
+
     createThought(req, res) {
         Thought.create(req.body)
             .then(({ _id }) => {
@@ -38,7 +39,7 @@ module.exports = {
         Thought.findOneAndUpdate(
             { _id: req.params.thoughtId },
             { $set: req.body },
-            { runValidators: true, New: true }
+            { runValidators: true, new: true }
         )
             .then((user) =>
                 !user
@@ -66,7 +67,7 @@ module.exports = {
             )
             .catch((err) => res.status(500).json(err));
     },
-    //create reaction
+
     createReaction(req, res) {
         Thought.findOneAndUpdate(
             { _id: req.params.thoughtId },
@@ -94,5 +95,4 @@ module.exports = {
             )
             .catch((err) => res.status(500).json(err));
     },
-
 };
