@@ -62,13 +62,13 @@ Steps to run application :
 
 ## Video:
 
-[Social Network API]()
+[Social Network API](https://drive.google.com/file/d/1xxeGX2o1lZ2dmCrbZuk9ofkL-FaXYDQP/view?usp=sharing)
 
 <hr>
 
 ## links
 
-- [Github Repo]()
+- [Github Repo](https://github.com/mdRashed30/Social-Network-API)
 
 <hr>
 
